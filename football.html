@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 100px;
+      width: 100px;
+      border-radius: 50% ;
+      border :2px solid deeppink;
+      position: relative;
+      animation-name: colorchange;
+      animation-duration: 2s;
+      animation-timing-function: cubic-bezier(0, 4.21, 1,-2.14);
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+    @keyframes colorchange{
+      0%{
+        top:0px;
+        right:0px;
+
+      }
+      25%{
+        top:0px;
+        left:0px;
+      }
+      50%{
+        top:100px;
+        left:150px;
+      }
+      75%{
+        top:150px;
+        left:100px;
+      }
+      100%{
+        left:100px;
+        top:50px;
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+  </div>
+  
+</body>
+</html>
